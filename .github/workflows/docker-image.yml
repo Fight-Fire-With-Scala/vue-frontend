@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: |
             ghcr.io/fight-fire-with-scala/vue-frontend:latest
-            ghcr.io/fight-fire-with-scala/vue-frontend:latest:${{ github.event.release.tag_name }}
+            ghcr.io/fight-fire-with-scala/vue-frontend:${{ github.event.release.tag_name }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64
